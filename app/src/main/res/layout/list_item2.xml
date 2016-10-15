@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        cardview:cardElevation="3dp"
+        cardview:cardCornerRadius="6dp"
+        cardview:cardBackgroundColor="#4A6C4A"
+        android:id="@+id/view">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:text="Level"
+        android:id="@+id/s_id"
+        android:layout_gravity="left"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:text="Level"
+        android:id="@+id/parcentage"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_below="@+id/s_id"
+        android:layout_alignParentEnd="true" />
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

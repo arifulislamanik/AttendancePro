@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arifulislamanik.attendancepro"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Attendance Pro 1.0" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity android:name=".Take_att" />
+        <activity
+            android:name=".att_form"
+            android:label="@string/title_activity_att_form" >
+        </activity>
+        <activity
+            android:name=".att_form1"
+            android:label="@string/title_activity_att_form" >
+        </activity>
+        <activity
+            android:name=".Students_attendance"
+            android:label="@string/title_activity_take_attendance" >
+        </activity>
+        <activity
+            android:name=".CourseReport"
+            android:label="Course Report" >
+        </activity>
+        <activity
+            android:name=".StudentId"
+            android:label="@string/title_activity_student_id"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".query_status"
+            android:label="@string/title_activity_query_status" >
+        </activity>
+        <activity
+            android:name=".SearchOption"
+            android:label="@string/title_activity_search_option" >
+        </activity>
+        <activity
+            android:name=".SetAlarm"
+            android:label="Set A alarm" >
+            <intent-filter>
+                <action android:name="com.arifulislamanik.attendancepro.SetAlarm" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlarmDetails"
+            android:label="Details of the alarm" >
+            <intent-filter>
+                <action android:name="com.arifulislamanik.attendancepro.AlarmDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DisplayNotification" >
+            <intent-filter>
+                <action android:name="com.arifulislamanik.attendancepro.DisplayNotification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".summary_report"
+            android:label="@string/title_activity_summary_report" >
+        </activity>
+    </application>
+
+</manifest>

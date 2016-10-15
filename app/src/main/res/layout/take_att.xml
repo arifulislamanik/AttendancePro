@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/login_back">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:text="Take Attendence"
+        android:width="200dp"
+        android:height="60dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="5dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:fastScrollEnabled="false"
+        android:focusableInTouchMode="false"
+        android:fastScrollAlwaysVisible="false"
+        android:drawSelectorOnTop="true"
+        android:clickable="false"
+        android:choiceMode="singleChoice"
+        android:background="#FFFFFF" />
+</RelativeLayout>

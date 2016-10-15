@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/att_report">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student&apos;s Attendance Report"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Student Id        : "
+        android:id="@+id/textView4"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:width="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name               :  "
+        android:id="@+id/textView6"
+        android:width="150dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="124401"
+        android:id="@+id/idField"
+        android:layout_marginStart="24dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mr."
+        android:id="@+id/nameField"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_alignStart="@+id/idField"
+        android:singleLine="false"
+        android:lines="2"
+        android:layout_alignTop="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Present  : "
+        android:id="@+id/textView7"
+        android:width="150dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Absent   :  "
+        android:id="@+id/textView8"
+        android:width="150dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Late        :  "
+        android:id="@+id/textView9"
+        android:width="150dp"
+        android:layout_below="@+id/textView8"
+        android:layout_toStartOf="@+id/idField"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Parcentage     :   "
+        android:id="@+id/textView10"
+        android:width="150dp"
+        android:layout_below="@+id/textView9"
+        android:layout_toStartOf="@+id/idField"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/presentField"
+        android:inputType="textMultiLine"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toEndOf="@+id/nameField"
+        android:layout_alignStart="@+id/idField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/absentField"
+        android:layout_above="@+id/textView9"
+        android:layout_toEndOf="@+id/nameField"
+        android:layout_alignStart="@+id/idField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/lateField"
+        android:layout_above="@+id/textView10"
+        android:layout_alignStart="@+id/idField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/parcentageField"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_toEndOf="@+id/nameField"
+        android:layout_alignStart="@+id/idField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Class      : "
+        android:id="@+id/textView13"
+        android:width="150dp"
+        android:layout_below="@+id/nameField"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/totalField"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/presentField" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/late_img"
+        android:src="@drawable/cal2"
+        android:layout_alignTop="@+id/lateField"
+        android:layout_alignStart="@+id/abs_img" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/abs_img"
+        android:src="@drawable/cal2"
+        android:layout_alignTop="@+id/absentField"
+        android:layout_alignEnd="@+id/idField" />
+
+    <Button
+        android:text="SEND SMS"
+        android:textColor="#FFFAFC"
+        android:id="@+id/button2"
+        android:layout_marginTop="47dp"
+        android:textSize="22sp"
+        android:layout_width="131dp"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_comm"
+        android:shadowColor="#565BA8"
+        android:shadowDx="2"
+        android:shadowDy="-1"
+        android:shadowRadius="5"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignEnd="@+id/textView10" />
+    <Button
+        android:text="SEND MAIL"
+        android:id="@+id/button3"
+        android:textColor="#FFFAFC"
+        android:textSize="22sp"
+        android:layout_width="131dp"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_comm"
+        android:shadowColor="#565BA8"
+        android:shadowDx="2"
+        android:shadowDy="-1"
+        android:shadowRadius="5"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignEnd="@+id/nameField" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        cardview:cardElevation="3dp"
+        cardview:cardCornerRadius="8dp"
+        cardview:cardBackgroundColor="#658070"
+        android:id="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="false">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+
+            android:text="Level"
+            android:id="@+id/listsubText"
+
+
+            android:textSize="25sp"
+            android:layout_above="@+id/listText"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:text="Level"
+            android:id="@+id/listText"
+
+            android:textSize="15sp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

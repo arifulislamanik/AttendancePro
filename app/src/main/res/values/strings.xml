@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Attendance Pro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_home">home</string>
+    <string name="title_activity_att_form">att_form</string>
+    <string name="title_activity_take_attendance">TakeAttendance</string>
+    <string name="title_activity_student_id">StudentId</string>
+    <string name="title_activity_query_status">query_status</string>
+    <string name="title_activity_search_option">SearchOption</string>
+    <string name="spinner_title">Select Limit</string>
+    <string name="title_activity_summary_report">summary_report</string>
+
+</resources>
